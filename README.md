@@ -1,2 +1,2 @@
 # yalyceum
-ruFlag.py - задание к вебинару о Git и PyGame
+задание к вебинару о Git и PyGame
