@@ -4,11 +4,12 @@ pygame.init()
 
 size = width, height = 500, 500
 screen = pygame.display.set_mode(size)
-
+white = pygame.Color('white')
 
 def draw():
-    pygame.draw.line(screen, pygame.Color('white'), (50, 450), (50, 100))
-
+    rectPoint = ((51, 100), (350, 60))
+    pygame.draw.line(screen, white, (50, 450), (50, 100))
+    pygame.draw.rect(screen, white, rectPoint)
 
 draw()
 
