@@ -144,8 +144,11 @@ class Player(Thing):
         for b in bukas:
             if pygame.sprite.collide_rect(self, b):
                 if isinstance(b, Buka):
-                    self.kill()
-                    pygame.event.post(pygame.event.Event(pygame.QUIT))
+                    if b.rect[1] > self.rect[1]:
+                        b.kill()
+                    else:
+                        self.kill()
+                        pygame.event.post(pygame.event.Event(pygame.QUIT))
 
 
 
