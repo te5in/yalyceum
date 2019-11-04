@@ -44,7 +44,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 done = True
-            elif event.type == pygame.MOUSEBUTTONDOWN:
+            elif event.type == pygame.MOUSEMOTION:
                 ball = make_ball(event.pos[0], event.pos[1])
                 ball_list.append(ball)
 
